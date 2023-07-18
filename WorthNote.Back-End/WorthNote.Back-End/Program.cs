@@ -8,6 +8,7 @@
             Console.WriteLine("Hello");
             var a = Console.ReadKey();  
             Console.WriteLine("Hello2");
+            Console.WriteLine("Eminin Cholpasi");
         }
     }
 }
