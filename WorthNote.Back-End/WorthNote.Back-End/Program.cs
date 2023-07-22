@@ -15,7 +15,7 @@
         
         }
 
-        void CopyAndPasteInput() {Console.WriteLine()
+        void CopyAndPasteInput() { Console.WriteLine(); }
 
 
 
