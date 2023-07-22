@@ -3,10 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WorthNote.Back_End.Models;
 
 namespace WorthNote.Back_End.Services
 {
-    internal class NoteService
+    public class NoteService : INoteService
     {
+        static List<Note> notes = new();
+        public Note CreateNote(Note note)
+        {
+            notes.Add(note);
+            return notes.Last();
+        }
+
+        public void DeleteNote(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Note GetNote(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Note UpdateNote(Note newNote)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
