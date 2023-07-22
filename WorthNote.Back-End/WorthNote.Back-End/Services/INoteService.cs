@@ -12,10 +12,10 @@ namespace WorthNote.Back_End.Services
     {
         Note GetNote(int id);
 
-        void Delete(int id);
+        void DeleteNote(int id);
 
-        Note Update(Note newNote);
+        Note UpdateNote(Note newNote);
             
-        Note Create(Note note);
+        Note CreateNote(Note note);
     }
 }
