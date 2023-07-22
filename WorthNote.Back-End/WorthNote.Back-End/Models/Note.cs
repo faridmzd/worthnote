@@ -8,7 +8,7 @@ namespace WorthNote.Back_End.Models
 {
     public class Note
     {
-        public int Id { get; set; }
+        public int Id { get; } = new Random().Next(10000,99999);
         public string Title { get; set; } = "Unnamed";
         public string Description { get; set; } = string.Empty; 
         public DateTime AddedTime { get; }  = DateTime.Now;
