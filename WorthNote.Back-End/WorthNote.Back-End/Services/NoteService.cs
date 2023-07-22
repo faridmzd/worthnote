@@ -23,7 +23,7 @@ namespace WorthNote.Back_End.Services
 
         public Note GetNote(int id)
         {
-            throw new NotImplementedException();
+            return (Note)notes.Where(note => note.Id == id);
         }
 
         public Note UpdateNote(Note newNote)
