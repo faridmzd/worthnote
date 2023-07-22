@@ -23,7 +23,7 @@ namespace WorthNote.Back_End.Services
 
         public Note GetNote(int id)
         {
-            return (Note)notes.Where(note => note.Id == id);
+            return notes.Where(note => note.Id == id).LastOrDefault();
         }
 
         public Note UpdateNote(Note newNote)
