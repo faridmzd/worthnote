@@ -12,6 +12,8 @@ namespace WorthNote.Back_End.Services
     {
         Note GetNote(int id);
 
+        List<Note> GetAllNotes();
+
         void DeleteNote(int id);
 
         Note UpdateNote(Note newNote);

@@ -10,6 +10,15 @@ namespace WorthNote.Back_End.Services
     public class NoteService : INoteService
     {
         static List<Note> notes = new();
+        public List<Note> GetAllNotes()
+        {
+            return notes;
+        }
+
+        public Note GetNote(int id)
+        {
+            return notes.Where(note => note.Id == id).LastOrDefault();
+        }
         public Note CreateNote(Note note)
         {
             notes.Add(note);
@@ -21,10 +30,6 @@ namespace WorthNote.Back_End.Services
             throw new NotImplementedException();
         }
 
-        public Note GetNote(int id)
-        {
-            return notes.Where(note => note.Id == id).LastOrDefault();
-        }
 
         public Note UpdateNote(Note newNote)
         {
